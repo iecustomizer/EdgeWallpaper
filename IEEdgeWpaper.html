@@ -1,0 +1,385 @@
+﻿<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+<style type="text/css">
+        @keyframes demo {
+            from {
+                opacity: 0.9;
+                animation-timing-function: ease;
+            }
+
+            to {
+                opacity: 0.4;
+                animation-timing-function: ease;
+            }
+        }
+
+        html, body {
+            height: 100%;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+
+        body {
+            background: url('space_hero_lrg_1280x720.png') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        #divSquare {
+            position: absolute;
+            height: 480px;
+            width: 480px;
+        }
+
+        #satellite {
+            display:none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            color: yellow;
+            background-color: transparent;
+        }
+        #satellite::-ms-fill {
+            animation-name: -ms-ring;
+        }
+
+        #canScreen, #canLights {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        #canLights, #satellite {
+            animation-delay: 0s;
+            animation-direction: alternate;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-name: demo;
+        }
+        /* Media Queries */
+        /* 480 x 320 Landscape */
+        @media only screen and (device-width:480px) and (device-height:320px) {
+            #divSquare {
+                width: 320px;
+                height: 320px;
+            }
+        }
+        /* 320 x 480 Portrait */
+        @media only screen and (device-width:320px) and (device-height:480px) {
+            #divSquare {
+                width: 320px;
+                height: 320px;
+            }
+        }
+        /* 800 x 480 Landscape */
+        @media only screen and (device-width:800px) and (device-height:480px) {
+            #divSquare {
+                width: 400px;
+                height: 400px;
+            }
+        }
+        /* 480 x 800 Portrait */
+        @media only screen and (device-width:480px) and (device-height:800px) {
+            #divSquare {
+                width: 400px;
+                height: 400px;
+            }
+        }
+        /* 640 x 480 Landscape */
+        @media only screen and (device-width:640px) and (device-height:480px) {
+            #divSquare {
+                width: 400px;
+                height: 400px;
+            }
+        }
+        /* 480 x 640 Portrait */
+        @media only screen and (device-width:480px) and (device-height:640px) {
+            #divSquare {
+                width: 400px;
+                height: 400px;
+            }
+        }
+        /* 800 x 600 Landscape */
+        @media only screen and (device-width:600px) and (device-height:800px) {
+            #divSquare {
+                width: 500px;
+                height: 500px;
+            }
+        }
+        /* 600 x 800 Portrait */
+        @media only screen and (device-width:600px) and (device-height:800px) {
+            #divSquare {
+                width: 500px;
+                height: 500px;
+            }
+        }
+        /* 1024 x 600 Landscape */
+        @media only screen and (device-width:1024px) and (device-height:600px) {
+            #divSquare {
+                width: 600px;
+                height: 600px;
+            }
+        }
+        /* 1024 x 600 Portrait */
+        @media only screen and (device-width:600px) and (device-height:1024px) {
+            #divSquare {
+                width: 600px;
+                height: 600px;
+            }
+        }
+        /* 1024 x 768 Landscape */
+        @media only screen and (device-width:1024px) and (device-height:768px) {
+            #divSquare {
+                width: 600px;
+                height: 600px;
+            }
+        }
+        /* 768 x 1024 Portrait */
+        @media only screen and (device-width:768px) and (device-height:1024px) {
+            #divSquare {
+                width: 600px;
+                height: 600px;
+            }
+        }
+        /* 1280 x 600 Landscape */
+        @media only screen and (device-width:1280px) and (device-height:600px) {
+            #divSquare {
+                width: 600px;
+                height: 600px;
+            }
+        }
+        /* 600 x 1280 Portrait */
+        @media only screen and (device-width:600px) and (device-height:1280px) {
+            #divSquare {
+                width: 600px;
+                height: 600px;
+            }
+        }
+
+        /* 1280 x 720 Landscape */
+        @media only screen and (device-width:1280px) and (device-height:720px) {
+            #divSquare {
+                width: 600px;
+                height: 600px;
+            }
+        }
+        /* 720 x 1280 Portrait */
+        @media only screen and (device-width:720px) and (device-height:1280px) {
+            #divSquare {
+                width: 600px;
+                height: 600px;
+            }
+        }
+
+        /* 1280 x 768 Landscape */
+        @media only screen and (device-width:1280px) and (device-height:768px) {
+            #divSquare {
+                width: 640px;
+                height: 640px;
+            }
+        }
+        /* 768 x 1280 Portrait */
+        @media only screen and (device-width:768px) and (device-height:1280px) {
+            #divSquare {
+                width: 640px;
+                height: 640px;
+            }
+        }
+        /* 1360 x 768 Landscape */
+        @media only screen and (device-width:1360px) and (device-height:768px) {
+            #divSquare {
+                width: 640px;
+                height: 640px;
+            }
+        }
+        /* 768 x 1360 Portrait */
+        @media only screen and (device-width:768px) and (device-height:1360px) {
+            #divSquare {
+                width: 640px;
+                height: 640px;
+            }
+        }
+        /* 1366 x 768 Landscape */
+        @media only screen and (device-width:1366px) and (device-height:768px) {
+            #divSquare {
+                width: 640px;
+                height: 640px;
+            }
+        }
+        /* 768 x 1366 Portrait */
+        @media only screen and (device-width:768px) and (device-height:1366px) {
+            #divSquare {
+                width: 640px;
+                height: 640px;
+            }
+        }
+        /* WSXGA Landscape */
+        @media only screen and (device-width:1680px) and (device-height:1050px) {
+            #divSquare {
+                width: 900px;
+                height: 900px;
+            }
+        }
+        /* WSXGA Portrait */
+        @media only screen and (device-width:1050px) and (device-height:1680px) {
+            #divSquare {
+                width: 900px;
+                height: 900px;
+            }
+        }
+        /* HD1080 Landscape */
+        @media only screen and (device-width:1920px) and (device-height:1080px) {
+            #divSquare {
+                width: 930px;
+                height: 930px;
+            }
+        }
+        /* HD1080 Portrait */
+        @media only screen and (device-width:1080px) and (device-height:1920px) {
+            #divSquare {
+                width: 930px;
+                height: 930px;
+            }
+        }
+        /* 2K Landscape */
+        @media only screen and (device-width:2048px) and (device-height:1080px) {
+            #divSquare {
+                width: 930px;
+                height: 930px;
+            }
+        }
+        /* 2K */
+        @media only screen and (device-width:1080px) and (device-height:2048px) {
+            #divSquare {
+                width: 930px;
+                height: 930px;
+            }
+        }
+        /* WUXGA Landscape */
+        @media only screen and (device-width:1200px) and (device-height:1920px) {
+            #divSquare {
+                width: 1090px;
+                height: 1090px;
+            }
+        }
+        /* QXGA Landscape */
+        @media only screen and (device-width:2048px) and (device-height:1536px) {
+            #divSquare {
+                width: 1400px;
+                height: 1400px;
+            }
+        }
+        /* QXGA Portrait */
+        @media only screen and (device-width:1536px) and (device-height:2048px) {
+            #divSquare {
+                width: 1400px;
+                height: 1400px;
+            }
+        }
+        /* WQXGA Landscape */
+        @media only screen and (device-width:2560px) and (device-height:1600px) {
+            #divSquare {
+                width: 1450px;
+                height: 1450px;
+            }
+        }
+        /* WQXGA Portrait */
+        @media only screen and (device-width:1600px) and (device-height:2560px) {
+            #divSquare {
+                width: 1450px;
+                height: 1450px;
+            }
+        }
+        /* QSXGA Landscape */
+        @media only screen and (device-width:2560px) and (device-height:2048px) {
+            #divSquare {
+                width: 1900px;
+                height: 1900px;
+            }
+        }
+        /* QSXGA Portrait */
+        @media only screen and (device-width:2048px) and (device-height:2560px) {
+            #divSquare {
+                width: 1900px;
+                height: 1900px;
+            }
+        }
+        /* WebTV Landscape only... probably no longer in use */
+        @media only screen and (device-width:544px) and (device-height:376px) {
+            #divSquare {
+                width: 400px;
+                height: 400px;
+            }
+        }
+
+</style>
+    <script type="text/javascript">
+    var iHeight, iWidth, iMaxh, iMaxw
+    function center(el) {
+        var h = getAvailHeight();
+        var w = getAvailWidth();
+        var max = Math.min(h, w);
+        if (max < iMaxw || max == screen.width || max == screen.height) {
+            el.style.width = max + 'px';
+            el.style.height = max + 'px';
+            iHeight = max; iWidth = max;
+        } else { iHeight = iMaxh; iWidth = iMaxw; }
+        el.style.top = (h - iHeight) / 2 + 'px';
+        el.style.left = (w - iWidth) / 2 + 'px';
+    }
+    function getAvailHeight() {
+        if (document.body && document.body.offsetHeight) { return document.body.offsetHeight; }
+        if (window.innerHeight) { return window.innerHeight; }
+        if (document.compatMode == 'CSS1Compat' && document.documentElement && document.documentElement.offsetHeight) { return document.documentElement.offsetHeight; }
+    }
+    function getAvailWidth() {
+        if (document.body && document.body.offsetWidth) { return document.body.offsetWidth; }
+        if (window.innerWidth) { return window.innerWidth; }
+        if (document.compatMode == 'CSS1Compat' && document.documentElement && document.documentElement.offsetWidth) { return document.documentElement.offsetWidth; }
+    }
+    </script>
+
+<title>EdgeIE Wallpaper</title>
+</head>
+
+<body style="background-color:black" onresize="center(document.getElementById('divSquare'));">
+    <div id="divSquare" style="background-color:transparent;">
+        <canvas id="canLights" height="480" width="480" style="background-color:transparent;height:100%;width:100%;"></canvas>
+        <progress id="satellite"></progress>
+    </div>
+    <div id="divResources" style="display:none;">
+        <img alt="" id="imgSprite" src="EdgeNeon.png" />
+    </div>
+<script type="text/javascript">
+    iHeight = eval(document.getElementById('divSquare').clientWidth);
+    iWidth = iHeight; iMaxh = iHeight; iMaxw = iHeight;
+    center(document.getElementById('divSquare'));
+    var ctxLights = document.getElementById('canLights').getContext('2d');
+    var sprite = document.getElementById('imgSprite');
+    window.onload = function () {
+        if (satellite.style.msContentZooming == '') { document.getElementById('satellite').style.display = 'block'; }
+        ctxLights.clearRect(0, 0, 480, 480);
+        ctxLights.drawImage(sprite, 0, 0, 480, 480, 0, 0, 480, 480);
+    };
+    if ('onfullscreenchange' in document) {
+        document.onfullscreenchange = function () { center(document.getElementById('divSquare')); };
+    } else if ('onwebkitfullscreenchange' in document) {
+        document.onwebkitfullscreenchange = function () { center(document.getElementById('divSquare')); };
+    } else if ('onmozfullscreenchange' in document) {
+        document.onmozfullscreenchange = function () { center(document.getElementById('divSquare')); };
+    } else if ('onmsfullscreenchange' in document) {
+        document.onmsfullscreenchange = function () { center(document.getElementById('divSquare')); };
+    };
+
+</script>
+</body>
+
+</html>
